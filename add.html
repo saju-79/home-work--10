@@ -19,7 +19,7 @@
                <div class="flex ">
                 <img class="w-14 "  src="./assets/Group.png" alt="">
                 <div class="mb-1">
-                    <h1 class="text-3xl font-bold mb-1 "> $ 4500</h1>
+                    <h1 class="text-3xl font-bold mb-1 "> $ <span id="mai-blance">4500</span></h1>
                     <p class="color-[#080808] border rounded p-1">avaiable blance </p>
                 </div>
                </div>
@@ -31,12 +31,12 @@
             
             <div class="grid grid-cols-3 gap-3 m-4 items-center justify-center text-center mb-10">
                 <!-- 1 box -->
-                <div class="border shadow-lg color-[#ffffff] rounded-xl">
+                <div class="border shadow-lg color-[#ffffff] rounded-xl" id="add-money">
                     <img class=" relative left-6 drop-shadow-xl  p-3" src="./assets/money1.png" alt="">
                     <h3 class="text-sm mb-2 color">Add Money</h3>
                 </div>
                 <!-- 2 box -->
-                <div class="border shadow-lg color-[#ffffff]  rounded-xl">
+                <div class="border shadow-lg color-[#ffffff]  rounded-xl" id="cash">
                     <img class=" relative left-6 drop-shadow-xl  p-3" src="./assets/purse1.png" alt="">
                     <h3 class="text-sm mb-2 color">Cashout</h3>
                 </div>
@@ -56,7 +56,7 @@
                     <h3 class="text-sm mb-2 color">Pay Bill</h3>
                 </div>
                 <!-- 6 box -->
-                <div class="border shadow-lg color-[#ffffff] rounded-xl ">
+                <div class="border shadow-lg -[#ffffff] rounded-xl ">
                     
                     
                     <img class=" relative left-6 drop-shadow-xl  p-3" src="./assets/transaction1.png" alt="">
@@ -64,41 +64,92 @@
                 </div>
             </div>
             <div class="  flex justify-between m-4 ">
-                <h1 class="font-semibold text-xl color-[#080808] ">Transfer Money</h1>
+                <h1 class="font-semibold text-xl color-[#080808] ">Add Money</h1>
                 <!-- <p>View All</p> -->
             </div >
             <!-- input section -->
                 
-                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10 m-6 ">
+                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10 m-6 " id="chash">
                         <form class="card-body mt-10">
+                            <!-- selec section -->
+           <legend class="text-lg font-medium"  >Select Bank</legend>
+           <select class="select select-primary w-full max-w-xs mb-4">
+             <option disabled selected>place coice your bank </option>
+             <option value="Bikash">Bikash</option>
+             <option value="Nogot">Nogot</option>
+             <option value="DBBL">DBBL</option>
+             <option value="Roket">Roket</option>
+           </select>
                           <div class="form-control mb-3">
                             <label class="label">
-                              <span class="label-text font-medium text-lg text-[#080808]">User Account Number</span>
+                              <span class="label-text font-medium text-lg text-[#080808]">Bank Account Number</span>
                             </label>
-                            <input type="number" placeholder="Enter 11 digit number" class="input input-bordered" required />
+                            <input value="01307616837" type="number" id="amount-number" placeholder="Enter 11 digit number" class="input input-bordered" required />
                           </div>
                           <div class="form-control mb-3">
                             <label class="label">
-                              <span class="label-text font-medium text-lg text-[#080808]">Amount</span>
+                              <span  class="label-text font-medium text-lg text-[#080808]">Amount to Add</span>
                             </label>
-                            <input type="number" placeholder="Enter amount to withdraw" class="input input-bordered" required />
+                            <input id="number-input"  type="text" placeholder="Enter amount to withdraw" class="input input-bordered" required />
                             
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text font-medium text-lg text-[#080808]  ">Pin Number</span>
                             </label>
-                            <input type="text" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                            <input value="2962" id="pin" type="text" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
                             
                           </div>
                           <div class="form-control mt-6">
-                            <button class="btn btn-primary w-full color-[#FFFFFF] rounded-3xl  text-xl font-semibold ">Send Now</button>
+                            <button id="add-btn" class= "btn btn-primary w-full color-[#FFFFFF] rounded-3xl  text-xl font-semibold ">Add Money</button>
                           </div>
                         </form>
                       </div>
                     </div>
                   </div>
             </section>
+            <section id="Cashout">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10 m-6 " >
+                    <form class="card-body mt-10">
+                        <!-- selec section -->
+       <!-- <legend class="text-lg font-medium"  >Select Bank</legend>
+       <select class="select select-primary w-full max-w-xs mb-4">
+         <option disabled selected>place coice your bank </option>
+         <option value="Bikash">Bikash</option>
+         <option value="Nogot">Nogot</option>
+         <option value="DBBL">DBBL</option>
+         <option value="Roket">Roket</option>
+       </select> -->
+                      <div class="form-control mb-3">
+                        <label class="label">
+                          <span class="label-text font-medium text-lg text-[#080808]">Bank Account Number</span>
+                        </label>
+                        <input value="01307616837" type="number" id="amount-number" placeholder="Enter 11 digit number" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mb-3">
+                        <label class="label">
+                          <span  class="label-text font-medium text-lg text-[#080808]">Amount to Add</span>
+                        </label>
+                        <input id="number-input"  type="text" placeholder="Enter amount to withdraw" class="input input-bordered" required />
+                        
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-medium text-lg text-[#080808]  ">Pin Number</span>
+                        </label>
+                        <input value="2962" id="pin" type="text" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                        
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="add-btn" class= "btn btn-primary w-full color-[#FFFFFF] rounded-3xl  text-xl font-semibold ">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
         </main>  
+    
+       <script src="addmoney.js"></script> 
     </body>
 </html>
