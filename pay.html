@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>secound-main</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
@@ -10,7 +13,8 @@
 </head>
 <body class="bg-slate-800">
     <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-300">
-        <header>
+        <main>
+            <section>
             <nav class="flex justify-between items-centerb m-4 ">
                <div class="flex ">
                 <img class="w-14 "  src="./assets/Group.png" alt="">
@@ -60,66 +64,48 @@
                 </div>
             </div>
             <div class="  flex justify-between m-4 ">
-                <h1 class="font-semibold text-xl color-[#080808] ">Latest Payment</h1>
-                <p>View All</p>
-            </div>
-            <!-- last section -->
-             <div class=" grid grid-row">
-               <!-- fist box-1 -->
-                <div class="justify-between m-4 mb-2 drop-shadow-xl border rounded-xl flex justify-between ">
-                    
-                    <!-- imsg -->
-                    <div class="flex  ">
-                        <img class="p-3" src="./assets/wallet1.png" alt="">
-                       <div class="p-2">
-                        <h1 class="font-semibold text-lg">Electricity Bill</h1>
-                        <p class="text-sm"> Today 01:44 AM</p>
-                       </div>
+                <h1 class="font-semibold text-xl color-[#080808] ">Pay Bill</h1>
+                <!-- <p>View All</p> -->
+            </div >
+            <!-- input section -->
+                
+                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10 m-6 ">
+                        <form class="card-body mt-10">
+                          <div class="form-control mb-3">
+                            <label class="label">
+                              <span class="label-text font-medium text-lg text-[#080808]">Select To Pay</span>
+                            </label>
+                            <input type="number" placeholder="Select back" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control mb-3">
+                            <label class="label">
+                              <span class="label-text font-medium text-lg text-[#080808]">Biller Account Number</span>
+                            </label>
+                            <input type="number" placeholder="Enter account number" class="input input-bordered" required />
+                            
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-medium text-lg text-[#080808]  ">Amount to Pay</span>
+                            </label>
+                            <input type="text" placeholder="Add Amount to pay" class="input input-bordered" required />
+                            
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-medium text-lg text-[#080808]  ">Pin Number</span>
+                            </label>
+                            <input type="text" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                            
+                          </div>
+                          <div class="form-control mt-6">
+                            <button class="btn btn-primary w-full color-[#FFFFFF] rounded-3xl  text-xl font-semibold ">Pay Now</button>
+                          </div>
+                        </form>
+                      </div>
                     </div>
-                     <div class=" m-4 " ><i class="fa-solid fa-bars"></i></i></div>
-                </div>
-                <!-- 2 -->
-                <div class="justify-between m-4 mb-2 drop-shadow-xl border rounded-xl flex justify-between ">
-                    
-                    <!-- imsg -->
-                    <div class="flex  ">
-                        <img class="p-3" src="./assets/wallet1.png" alt="">
-                       <div class="p-2">
-                        <h1 class="font-semibold text-lg">Bank Deposit</h1>
-                        <p class="text-sm"> Today 01:44 AM</p>
-                       </div>
-                    </div>
-                    <div class=" m-4 " ><i class="fa-solid fa-bars"></i></i></div>
-                </div>
-                <!-- 3 -->
-                <div class="justify-between m-4 mb-2 drop-shadow-xl border rounded-xl flex justify-between ">
-                    
-                    <!-- imsg -->
-                    <div class="flex  ">
-                        <img class="p-3" src="./assets/wallet1.png" alt="">
-                       <div class="p-2">
-                        <h1 class="font-semibold text-lg">Mobile Recharge</h1>
-                        <p class="text-sm"> Today 01:44 AM</p>
-                       </div>
-                    </div>
-                    <div class=" m-4 " ><i class="fa-solid fa-bars"></i></i></div>
-                </div>
-                <!-- 4 -->
-                <div class="justify-between m-4 mb-2 drop-shadow-xl border rounded-xl flex justify-between ">
-                    
-                    <!-- imsg -->
-                    <div class="flex  ">
-                        <img class="p-3" src="./assets/wallet1.png" alt="">
-                       <div class="p-2">
-                        <h1 class="font-semibold text-lg">Gas Bill</h1>
-                        <p class="text-sm"> Today 01:44 AM</p>
-                       </div>
-                    </div>
-                    <div class=" m-4 " ><i class="fa-solid fa-bars"></i></i></div>
-                </div>
-             </div>
+                  </div>
             </section>
-        </header>
-    </section>
-</body>
+        </main>  
+    </body>
 </html>
